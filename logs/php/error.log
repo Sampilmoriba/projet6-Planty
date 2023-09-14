@@ -1,0 +1,5 @@
+[07-Sep-2023 20:42:20 UTC] PHP Warning:  Undefined variable $qsid in /Users/sampilmoriba/Desktop/planty/app/public/wp-content/plugins/child-theme-configurator/includes/classes/CSS.php on line 958
+[07-Sep-2023 20:42:20 UTC] PHP Warning:  Undefined variable $qsid in /Users/sampilmoriba/Desktop/planty/app/public/wp-content/plugins/child-theme-configurator/includes/classes/CSS.php on line 960
+[07-Sep-2023 20:42:20 UTC] PHP Warning:  Undefined variable $qsid in /Users/sampilmoriba/Desktop/planty/app/public/wp-content/plugins/child-theme-configurator/includes/classes/CSS.php on line 967
+[07-Sep-2023 20:42:20 UTC] PHP Warning:  Undefined variable $qsid in /Users/sampilmoriba/Desktop/planty/app/public/wp-content/plugins/child-theme-configurator/includes/classes/CSS.php on line 968
+[07-Sep-2023 20:42:20 UTC] PHP Warning:  Undefined variable $qsid in /Users/sampilmoriba/Desktop/planty/app/public/wp-content/plugins/child-theme-configurator/includes/classes/CSS.php on line 971

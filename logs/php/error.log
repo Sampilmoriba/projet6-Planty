@@ -3,3 +3,8 @@
 [07-Sep-2023 20:42:20 UTC] PHP Warning:  Undefined variable $qsid in /Users/sampilmoriba/Desktop/planty/app/public/wp-content/plugins/child-theme-configurator/includes/classes/CSS.php on line 967
 [07-Sep-2023 20:42:20 UTC] PHP Warning:  Undefined variable $qsid in /Users/sampilmoriba/Desktop/planty/app/public/wp-content/plugins/child-theme-configurator/includes/classes/CSS.php on line 968
 [07-Sep-2023 20:42:20 UTC] PHP Warning:  Undefined variable $qsid in /Users/sampilmoriba/Desktop/planty/app/public/wp-content/plugins/child-theme-configurator/includes/classes/CSS.php on line 971
+[18-Sep-2023 11:33:00 UTC] PHP Parse error:  Unterminated comment starting line 16 in /Users/sampilmoriba/Desktop/planty/app/public/wp-content/themes/blankslate-child/header.php on line 16
+[18-Sep-2023 11:33:02 UTC] PHP Parse error:  Unterminated comment starting line 16 in /Users/sampilmoriba/Desktop/planty/app/public/wp-content/themes/blankslate-child/header.php on line 16
+[18-Sep-2023 11:33:23 UTC] PHP Parse error:  Unterminated comment starting line 16 in /Users/sampilmoriba/Desktop/planty/app/public/wp-content/themes/blankslate-child/header.php on line 16
+[18-Sep-2023 11:33:23 UTC] PHP Parse error:  Unterminated comment starting line 16 in /Users/sampilmoriba/Desktop/planty/app/public/wp-content/themes/blankslate-child/header.php on line 16
+[18-Sep-2023 11:33:27 UTC] PHP Parse error:  Unterminated comment starting line 16 in /Users/sampilmoriba/Desktop/planty/app/public/wp-content/themes/blankslate-child/header.php on line 16

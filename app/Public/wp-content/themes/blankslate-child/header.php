@@ -7,11 +7,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="wrapper" class="hfeed">
-<header id="header" role="banner">
-<nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
 <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
 	<?php
 		$custom_logo_id = get_theme_mod('custom_logo');
@@ -19,6 +14,11 @@
 	?>
 	<img src="<?php echo $image[0]; ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
 </a>
+<?php wp_body_open(); ?>
+<div id="wrapper" class="hfeed">
+<header id="header" role="banner">
+<nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
 </nav>
 </header>
 <div id="container">

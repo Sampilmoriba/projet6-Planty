@@ -6,6 +6,7 @@ add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' );
 add_theme_support('menus');
 register_nav_menu('header', 'En tête du menu');
+register_nav_menu('footer', 'Pied de page');
 add_theme_support( 'responsive-embeds' );
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'html5', array( 'search-form', 'navigation-widgets' ) );
@@ -79,6 +80,21 @@ return esc_html( '...' );
 return wp_kses_post( $title );
 }
 }
+
+function blankslate_menu_class(array $classes): array
+{
+$classes[] = 'nav-item';
+return $classes;
+}
+
+function blankslate_menu_link_class(array $attrs): array
+{
+$attrs['class'] = 'nav-link';
+return $attrs;
+}
+
+add_filter('nav_menu_css-class', 'blankslate_menu_class');
+
 function blankslate_schema_type() {
 $schema = 'https://schema.org/';
 if ( is_single() ) {

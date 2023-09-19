@@ -4,6 +4,8 @@ function blankslate_setup() {
 load_theme_textdomain( 'blankslate', get_template_directory() . '/languages' );
 add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' );
+add_theme_support('menus');
+register_nav_menu('header', 'En tête du menu');
 add_theme_support( 'responsive-embeds' );
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'html5', array( 'search-form', 'navigation-widgets' ) );

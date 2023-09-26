@@ -7,19 +7,26 @@
 </head>
 
 <body <?php body_class(); ?>>
-<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-	<?php
-		$custom_logo_id = get_theme_mod('custom_logo');
-		$image = wp_get_attachment_image_src($custom_logo_id , 'full');
-	?>
-	<img src="<?php echo $image[0]; ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
-</a>
+
 <?php wp_body_open(); ?>
 <div id="wrapper" class="hfeed">
 <header id="header" role="banner">
+<?php if(has_custom_logo()) : ?>
+<a class="logo-brand" href="<?php bloginfo('url'); ?>"><?php the_custom_logo(); ?></a>
+ <?php else : ?>
+<a class="site-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
+<?php endif; ?>    
 <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
+<?php wp_nav_menu([
+            'theme_location' => 'header',
+            'container' => false,
+            'menu_class' => 'navbar-nav mr-auto',
+            
+]);
+            ?>
 </nav>
+
 </header>
 <div id="container">
 <main id="content" role="main">
+

@@ -21,23 +21,21 @@ if ( !function_exists( 'chld_thm_cfg_parent_css' ) ):
     }
 endif;
 add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
-
+add_theme_support('menus');
+register_nav_menu('header', 'En tête du menu');
+register_nav_menu('footer', 'Pied de page');
 // END ENQUEUE PARENT ACTION
 
-function wpc_customize_register($wp_customize) {
-	$wp_customize->add_section('wpc_logo_section', array(
-			'title'          => __('Logo', 'textdomain'),
-			'priority'       => 30,
-			'description'    => __('Upload a logo to replace the default site name and description in the header', 'textdomain')
-		)
-	);
-	$wp_customize->add_setting('wpc_logo');
-	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'wpc_logo', array(
-			'label'      => __('Logo', 'textdomain'),
-			'section'    => 'wpc_logo_section',
-			'settings'   => 'wpc_logo')
-		)
-	);
-}
-add_action('customize_register', 'wpc_customize_register');
+$logo_width  = 300;
+$logo_height = 100;
 
+add_theme_support(
+'custom-logo',
+array(
+    'height'               => $logo_height,
+    'width'                => $logo_width,
+    'flex-width'           => true,
+    'flex-height'          => true,
+    'unlink-homepage-logo' => true,
+)
+);

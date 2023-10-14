@@ -11,11 +11,7 @@
 <?php wp_body_open(); ?>
 <div id="wrapper" class="hfeed">
 <header id="header" role="banner">
-<?php if(has_custom_logo()) : ?>
-<a class="logo-brand" href="<?php bloginfo('url'); ?>"><?php the_custom_logo(); ?></a>
- <?php else : ?>
-<a class="site-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
-<?php endif; ?>    
+<?php the_custom_logo(); ?>  
 <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
 <?php wp_nav_menu([
             'theme_location' => 'header',

@@ -39,3 +39,13 @@ array(
     'unlink-homepage-logo' => true,
 )
 );
+
+
+
+function add_login_link( $items, $args ) {
+    if (is_user_logged_in() && $args->theme_location == 'header') {
+        $items .= '<li><a href="'. get_admin_url() .'">Admin</a></li>';
+    }
+    return $items;
+}
+add_filter( 'wp_nav_menu_items','add_login_link', 10, 2 );

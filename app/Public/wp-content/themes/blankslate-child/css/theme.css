@@ -1,10 +1,11 @@
 /****** General ***********/
 * {
     box-sizing: border-box;
+    font-family: 'Syne';
     color: #000000;
     box-sizing: border-box;
+    margin: 0;
 }
-
 
 .hfeed {
     max-width: 1440px;
@@ -15,38 +16,77 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid #FFFFFF;
+    align-items: center;
+}
+
+.header {
+    display: none;
+    display: none;
 }
 
 .custom-logo {
     width: 201px;
     height: 19px;
-    top: 31px;
-    left: 37px;
+    margin-left: 37px;
 }
 
-#menu ul.navbar-nav li {
-    display: inline-block;
-    margin-right: 10px;
-    padding: 20px;
+header,
+#menu,
+#menu-navigation,
+#menu-navigation li {
+    height: 80px;
 }
 
-#menu ul.navbar-nav li a {
+#menu-navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+#menu-navigation li {
+    width: 236px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-navigation li a {
     text-decoration: none;
-    margin-left: 10px;
 }
 
-#menu ul.navbar-nav li:nth-child(2) {
-    border: 2px solid #DC9F96;
+#menu-navigation li:nth-child(1) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+#menu-navigation li:nth-child(2) {
     background: #DC9F96;
-    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+}
+
+#menu :nth-child(2) a {
+    color: #FFFFFF;
+}
+
+#menu ul.navbar-nav li:nth-child(2):hover {
+    background: #C02E44;
+    color: #FFFFFF;
+}
+
+#menu ul.navbar-nav li:nth-child(1):hover {
+    font-family: 'Syne';
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #000000;
+    background: #FFFFFF;
 }
 
 .text-h2 img {
-
     text-align: center;
     background-color: #E3D9D0;
-
 }
 
 .text-2 {
@@ -60,11 +100,12 @@ header {
     position: relative;
     height: auto;
     background-color: #E3D9D0;
-    border-radius: 20px, 20px, 20px, 20px;
+    border-bottom-left-radius: 50px;
+    border-bottom-left-radius: 30px;
 }
 
 .bottle img {
-    width: 345x;
+    
     height: auto;
 }
 
@@ -80,7 +121,7 @@ header {
     height: 370.08px;
     top: 175px;
     left: 268px;
-    transform: rotate(-deg);
+
 }
 
 .drink-block .feuille-2 img {
@@ -89,7 +130,6 @@ header {
     height: 363.08px;
     top: 178px;
     right: 277px;
-    transform: rotate(-deg);
 }
 
 .text-h3 img {
@@ -98,11 +138,10 @@ header {
 }
 
 .block-texth3 {
-    font-family: Syne;
+    font-family: 'Syne';
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0em;
     text-align: center;
     padding-bottom: 25px;
 }
@@ -111,7 +150,7 @@ header {
     background-color: #E3D9D0;
 }
 
-.gout-png {
+.gout {
     background-color: #E3D9D0;
     padding-bottom: 0px;
 }
@@ -122,47 +161,665 @@ header {
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0em;
     text-align: center;
     background-color: #E3D9D0;
 }
 
-.block-gouts img {
-padding: 10px;
+#card-gouts-img-g1,
+#card-gouts-img-g2,
+#btn-les-gouts {
+    display: flex;
+    flex-direction: row;
     background-color: #E3D9D0;
 }
 
-.block-gouts {
+#card-gouts-img-g1 :nth-child(1) #card-gouts-img-g2 :nth-child(1) #btn-les-gouts :nth-child(1) {
+    justify-content: center;
+}
+
+.card-gouts-img {
+    width: 393px;
+    height: 262px;
+}
+
+#btn-les-gouts {
+    padding-bottom: 32px;
+}
+
+
+#btn-order a {
+    background: #E0B9B4;
+}
+
+#btn-order a span {
+    color: #FFFFFF;
+}
+
+#btn-order a,
+#btn-order :hover {
+    border-radius: 5px;
+}
+
+#btn-order a:hover {
+    background: #C02E44;
+}
+
+.block-text3 img {
+    margin: 80px;
+}
+
+
+#block-end {
+    margin: 20px;
+
+}
+
+#blockpic img {
+    width: 343px;
+    height: 139px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#text-end h3 {
+    font-family: 'Syne';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 20px;
+    gap: 20px;
+
+}
+
+#edit-end {
+    font-family: 'Syne';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 15px;
+    align-items: center;
+}
+
+.canettes {
+    padding: 0;
+}
+
+#bottle-block {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+#bottle-pic img {
+    width: 100%;
+    padding-left: 20px;
+
+}
+
+.nav-bar-footer {
+
+    margin: auto;
+    text-align: center;
+}
+
+.nav-bar-footer li a {
+    text-decoration: none;
+}
+
+#footer {
+    margin: 20px;
+    text-decoration: none;
+}
+
+#footer-title {
+    font-family: 'Syne';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    align-items: center;
+    width: 119px;
+    height: 19px;
+    top: 20px;
+    left: 661px;
+    list-style-type: none;
+}
+
+#footer-text {
+    text-align: center;
+}
+
+/* Page Nous Rencontrer*/
+
+.first-block {
     background-color: #E3D9D0;
-    padding: 10px;
-}
-
-.fraisepng img {
-    width: 100%;
-    height: 262px;
-    left: 312px;
-}
-
-.pmoussepng img {
-    width: 100%;
-    height: 262px;
-    left: 312px;
-}
-
-.framboisepng img {
-    width: 100%;
-    height: 262px;
-    left: 312px;
+    width: 1114px;
+    border-radius: 30%;
 
 }
 
-.citronpng img {
-    width: 100%;
-    height: 262px;
-    left: 312px;
+.flower-pic {
+    width: 145.3px;
+    transform: rotate(-40deg);
 }
 
-.cmderpng {
-    margin: 30px;
+.text-rencontrer {
+    padding-top: 140px;
+    text-align: center;
+
+}
+
+.first-text {
+    font-family: 'Syne';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+
+
+.team-block {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.lekipe {
+    font-family: 'Syne';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    align-items: center;
+    width: 139px;
+
+
+
+}
+
+.team-flower img {
+    width: 113.32px;
+    border: 5px;
+    transform: rotate(12deg);
+}
+
+/*
+.team-flower img {
+    width: 100.14px;
+    position: relative;
+
+    padding-right: 10px;
+    padding-top: 10px;
+
+}*/
+
+#formulaire {
+    border-bottom: #FFFFFF;
     background-color: #E3D9D0;
+    padding: 0;
+    margin: 0;
+}
+
+#contact {
+    font-family: 'Syne';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    margin-top: 5%;
+}
+
+.form-7 {
+    margin-left: 90px;
+}
+
+.form {
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.label-form {
+    display: block;
+    text-align: left;
+    margin-top: 22px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+input[type="text"] {
+    border-radius: 7px;
+}
+
+.input-form {
+    border: 0;
+    ;
+    width: 383px;
+    height: 71px;
+    border-radius: 7px;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
+}
+
+.input-text-form {
+    height: 237px;
+}
+
+input[type="submit"] {
+    border-radius: 5px;
+}
+
+.send {
+    width: 198px;
+    height: 55px;
+    border: none;
+    margin-top: 24px;
+    background: #E0B9B4;
+    margin-top: 22px;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37px;
+}
+
+.send:hover {
+    background: #C02E44;
+}
+
+.flower-contact img {
+    position: absolute;
+    width: 140.32px;
+    left: 450px;
+    bottom: 53px;
+}
+
+#canette-png img {
+    padding: 0;
+    margin: 0;
+}
+
+#canettes-block {
+    padding: 0;
+    margin: 0;
+}
+
+/*PAGE COMMANDER */
+#block-commander {
+    background-color: green;
+}
+
+#text-commander {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid white;
+    padding-bottom: 50px;
+}
+
+#text-commander h2 {
+    font-family: 'Syne';
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 46px;
+    letter-spacing: 0em;
+}
+
+
+
+#block2-text {
+    font-family: 'Syne';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    background-color: green;
+    width: 290px;
+    height: 36px;
+    left: 250px;
+
+}
+
+#kommander {
+    background-color: green;
+    padding-bottom: 50px;
+}
+
+#block-html {
+    width: 100%;
+    display: block;
+
+}
+
+.html-text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.zero {
+    line-height: 19px;
+
+    background: #FFFFFF;
+    width: 100px;
+    text-align: center;
+    border: 50px;
+    padding-top: 18px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+
+}
+
+.zero p {
+    color: #000000;
+    font-size: 20px;
+    align-self: center;
+    text-align: center;
+}
+
+.plus-moins {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+
+}
+
+.plus {
+    text-align: left;
+    background: #FFFFFF;
+    width: 40px;
+    text-align: center;
+
+    padding-top: 4px;
+    background: #DC9F96;
+    border-bottom: 2px white;
+    border-top-right-radius: 8px;
+}
+
+.plus p {
+    padding-bottom: 10px
+}
+
+.moins {
+    line-height: 19px;
+
+    text-align: left;
+    background: #FFFFFF;
+    width: 40px;
+    text-align: center;
+    padding-bottom: 4px;
+    background: #DC9F96;
+    border-bottom-right-radius: 8px;
+
+}
+
+.woke {
+    text-align: left;
+    background: #FFFFFF;
+    width: 190px;
+    text-align: center;
+    border: 50px;
+    padding-top: 20px;
+    background: #E0B9B4;
+    border-radius: 8px;
+}
+
+.plus p,
+.moins p,
+.woke p {
+    color: #FFFFFF;
+}
+
+.plus p {
+    border-bottom: 1px solid white;
+}
+
+.woke:hover {
+    background: #C02E44;
+}
+
+#form-2 {
+    background-color: green;
+    font-family: 'syne';
+
+}
+
+
+#form-commander {
+    padding: 0;
+
+}
+
+.form-commander {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-main {
+
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #FFFFFF;
+    width: 65%;
+}
+
+
+.form-sec {
+
+    margin: 35px 0 35px 0;
+    color: #FFFFFF;
+}
+
+.separation {
+    border-left: 1px solid #FFFFFF;
+    padding-bottom: 620px;
+    position: relative;
+    top: -40px;
+}
+
+.form-sec-1 {
+
+    margin: 35px 0 35px 0;
+    color: #FFFFFF;
+}
+
+h4 {
+    font-family: 'Syne';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+
+.label-form-2 {
+    font-family: 'Syne';
+    font-size: 20px;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+
+.input-form2 {
+    width: 383px;
+    height: 71px;
+    border-radius: 7px;
+    color: #000000;
+    border: #FFFFFF;
+}
+
+.submit-btn {
+    text-align: center;
+    margin-left: 75px;
+}
+
+.submit-btn [type="submit"] {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    background: #E0B9B4;
+    color: white;
+    border: #FFFFFF
+}
+
+.submit-btn [type="submit"]:hover {
+    background: #C02E44;
+
+}
+
+/* HOOK LOGIN */
+
+header :nth-child(1) {
+    order: 1;
+}
+
+header :nth-child(2) {
+    order: 3;
+}
+
+header :nth-child(3) {
+    order: 2;
+}
+
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 32Opx) */
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    #menu-navigation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #header {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-2 {
+        background: #E3D9D0;
+        height: 735px;
+        text-align: center;
+    }
+
+    .feuille-1,
+    .feuille-2 {
+        display: none;
+    }
+
+    .drink-block {
+        text-align: center;
+        background: #E3D9D0;
+
+    }
+
+    .block-text {
+        text-align: center;
+
+    }
+
+    #card-gouts-img-g1 {
+
+        text-align: center;
+        background: #E3D9D0;
+    }
+
+    #btn-les-gouts {
+        text-align: center;
+    }
+
+    .block-text3 img {
+        margin: 80px 0 80px 0;
+    }
+
+    .flower-pic,
+    .flower-contact,
+    .team-flower {
+        display: none;
+    }
+
+    #formulaire {
+        font-size: small;
+    }
+
+    .team-block {
+        margin-left: 50px;
+    }
+
+    .text-rencontrer {
+        padding-top: 0;
+    }
+
+    #text-rencontrer h2 {
+        font-size: 100%;
+    }
+
+    #lekipe {
+        width: auto;
+    }
+
+    #form-contact {
+        width: auto;
+    }
+
+    .form p {
+        width: 100%;
+    }
+
+    .input-form {
+        width: auto;
+    }
+
+    #text-commander {
+        width: auto;
+    }
+
+    #block2-text {
+        left: 0;
+    }
+
+    .form-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    .separation {
+        display: none;
+    }
+
 }
